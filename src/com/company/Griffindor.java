@@ -13,7 +13,12 @@ public class Griffindor extends Hogwarts{
         this.courage = courage;
     }
 
-    public void compareStudents(Griffindor student) {
+    public String toString() {
+        return  super .toString() + ", уровень благородства: " + chivalry + ", уровень чести: " + honor +
+                ", уровень мужества: " + courage;
+    }
+
+    public void compareStudentsGriffindor(Griffindor student) {
         if (this.getChivalry() > student.getChivalry()) {
             System.out.println(this.getName() + " более благороден(на), чем " + student.getName());
         } else if (this.getChivalry() == student.getChivalry()) {

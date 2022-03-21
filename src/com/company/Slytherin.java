@@ -16,7 +16,13 @@ public class Slytherin extends Hogwarts{
         this.resourcefulness = resourcefulness;
         this.lustForPower = lustForPower;
     }
-    public void compareStudents(Slytherin student) {
+    public String toString() {
+        return super .toString() + ", уровень хитрости: " + cunning + ", уровень решительности: " + determination +
+                ", уровень амбициозности: " + ambition + ", уровень находчивости: " + resourcefulness +
+                ", уровень жажды власти: " + lustForPower;
+    }
+
+    public void compareStudentsSlytherin(Slytherin student) {
         if (this.getCunning() > student.getCunning()) {
             System.out.println(this.getName() + " более хитрый(ая), чем " + student.getName());
         } else if (this.getCunning() == student.getCunning()) {

@@ -13,7 +13,12 @@ public class Hufflepuff extends Hogwarts{
         this.fairness = fairness;
     }
 
-    public void compareStudents(Hufflepuff student) {
+    public String toString() {
+        return super .toString() + ", уровень трудолюбия: " + hardworking + ", уровень верности: " + loyalty +
+                ", уровень честности: " + fairness;
+    }
+
+    public void compareStudentsHufflepuff(Hufflepuff student) {
         if (this.getHardworking() > student.getHardworking()) {
             System.out.println(this.getName() + " более трудолюбивый(ая), чем " + student.getName());
         } else if (this.getHardworking() == student.getHardworking()) {

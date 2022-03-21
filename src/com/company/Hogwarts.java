@@ -13,7 +13,7 @@ public class Hogwarts {
     }
 
     public String toString() {
-        return "Студент" + name + "имеет силу магии: " + powerOfMagic + ", расстояние трансгрессии: " + apparation;
+        return "Студент " + name + ", имеет силу магии: " + powerOfMagic + ", расстояние трансгрессии: " + apparation;
     }
 
     public void compareStudents(Hogwarts student) {

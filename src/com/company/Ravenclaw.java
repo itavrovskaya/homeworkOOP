@@ -14,8 +14,12 @@ public class Ravenclaw extends Hogwarts{
         this.wit = wit;
         this.creativity = creativity;
     }
+    public String toString() {
+        return super .toString() + ", уровень ума: " + intelligence + ", уровень мудрости: " + wisdom +
+                ", уровень остроумия: " + wit + ", уровень креативности: " + creativity;
+    }
 
-    public void compareStudents(Ravenclaw student) {
+    public void compareStudentsRavenclaw(Ravenclaw student) {
         if (this.getIntelligence() > student.getIntelligence()) {
             System.out.println(this.getName() + " более умный(ая), чем " + student.getName());
         } else if (this.getIntelligence() == student.getIntelligence()) {
