@@ -29,6 +29,5 @@ public class Main {
         printService.print(slytherins);
         printService.print(ravenclaws);
         printService.print(hufflepuffs);
-
     }
 }

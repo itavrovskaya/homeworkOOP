@@ -13,6 +13,32 @@ public class Hufflepuff extends Hogwarts{
         this.fairness = fairness;
     }
 
+    public void compareStudents(Hufflepuff student) {
+        if (this.getHardworking() > student.getHardworking()) {
+            System.out.println(this.getName() + " более трудолюбивый(ая), чем " + student.getName());
+        } else if (this.getHardworking() == student.getHardworking()) {
+            System.out.println("Трудолюбивость студента - " + this.getName() +
+                    " равна трудолюбивости студент - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более трудолюбивый(ая), чем " + this.getName());
+        }
+        if (this.getLoyalty() > student.getLoyalty()) {
+            System.out.println(this.getName() + " более верный(ая), чем " + student.getName());
+        } else if (this.getLoyalty() == student.getLoyalty()) {
+            System.out.println("Верность студента - " + this.getName() +
+                    " верность студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более верный(ая), чем " + this.getName());
+        }
+        if (this.getFairness() > student.getFairness()) {
+            System.out.println(this.getName() + " более честный(ая), чем " + student.getName());
+        } else if (this.getFairness() == student.getFairness()) {
+            System.out.println("Честность студента - " + this.getName() +
+                    " равна честности студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более честный(ая), чем " + this.getName());}
+    }
+
     public int getHardworking() {
         return hardworking;
     }

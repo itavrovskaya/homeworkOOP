@@ -15,6 +15,40 @@ public class Ravenclaw extends Hogwarts{
         this.creativity = creativity;
     }
 
+    public void compareStudents(Ravenclaw student) {
+        if (this.getIntelligence() > student.getIntelligence()) {
+            System.out.println(this.getName() + " более умный(ая), чем " + student.getName());
+        } else if (this.getIntelligence() == student.getIntelligence()) {
+            System.out.println("Студент - " + this.getName() +
+                    " и студент - " + student.getName() + " одинаково умны");
+        } else {
+            System.out.println(student.getName() + " более умный(ая), чем " + this.getName());
+        }
+        if (this.getWisdom() > student.getWisdom()) {
+            System.out.println(this.getName() + " более мудрый(ая), чем " + student.getName());
+        } else if (this.getWisdom() == student.getWisdom()) {
+            System.out.println("Уровень мудрости студента - " + this.getName() +
+                    " равен уровню мудрости студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более мудрый(ая), чем " + this.getName());
+        }
+        if (this.getWit() > student.getWit()) {
+            System.out.println(this.getName() + " более остроумный(ая), чем " + student.getName());
+        } else if (this.getWit() == student.getWit()) {
+            System.out.println("Остроумие студента - " + this.getName() +
+                    " равно остроумию студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более остроумный(ая), чем " + this.getName());}
+        if (this.getCreativity() > student.getCreativity()) {
+            System.out.println(this.getName() + " более креативный(ая), чем " + student.getName());
+        } else if (this.getCreativity() == student.getCreativity()) {
+            System.out.println("" +
+                    "Креативность студента - " + this.getName() +
+                    " равна креативности студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более креативный(ая), чем " + this.getName());}
+    }
+
     public int getIntelligence() {
         return intelligence;
     }

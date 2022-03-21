@@ -13,6 +13,32 @@ public class Griffindor extends Hogwarts{
         this.courage = courage;
     }
 
+    public void compareStudents(Griffindor student) {
+        if (this.getChivalry() > student.getChivalry()) {
+            System.out.println(this.getName() + " более благороден(на), чем " + student.getName());
+        } else if (this.getChivalry() == student.getChivalry()) {
+            System.out.println("Благородность студента - " + this.getName() +
+                    " равна благородности студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более благороден(на), чем " + this.getName());
+        }
+        if (this.getHonor() > student.getHonor()) {
+            System.out.println(this.getName() + " имеет более высокий уровень чести, чем " + student.getName());
+        } else if (this.getHonor() == student.getHonor()) {
+            System.out.println("Уровень чести студента - " + this.getName() +
+                    " равен уровню чести студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " имеет более высокий уровень чести, чем " + this.getName());
+        }
+        if (this.getCourage() > student.getCourage()) {
+            System.out.println(this.getName() + " более мужественнен(на), чем " + student.getName());
+        } else if (this.getCourage() == student.getCourage()) {
+            System.out.println("Мужество студента - " + this.getName() +
+                    " равно мужеству студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более мужественнен(на), чем " + this.getName());}
+    }
+
     public int getChivalry() {
         return chivalry;
     }

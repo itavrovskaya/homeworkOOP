@@ -16,6 +16,46 @@ public class Slytherin extends Hogwarts{
         this.resourcefulness = resourcefulness;
         this.lustForPower = lustForPower;
     }
+    public void compareStudents(Slytherin student) {
+        if (this.getCunning() > student.getCunning()) {
+            System.out.println(this.getName() + " более хитрый(ая), чем " + student.getName());
+        } else if (this.getCunning() == student.getCunning()) {
+            System.out.println("Хитрость студента - " + this.getName() +
+                    " равна хитрости студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более хитрый(ая), чем " + this.getName());
+        }
+        if (this.getDetermination() > student.getDetermination()) {
+            System.out.println(this.getName() + " более решительный(ая), чем " + student.getName());
+        } else if (this.getDetermination() == student.getDetermination()) {
+            System.out.println("Уровень решительности студента - " + this.getName() +
+                    " равен уровню решительности студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более решительный(ая), чем " + this.getName());
+        }
+        if (this.getAmbition() > student.getAmbition()) {
+            System.out.println(this.getName() + " более амбициозный(ая), чем " + student.getName());
+        } else if (this.getAmbition() == student.getAmbition()) {
+            System.out.println("Амбициозность студента - " + this.getName() +
+                    " равна амбициозности студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более амбициозный(ая), чем " + this.getName());}
+        if (this.getResourcefulness() > student.getResourcefulness()) {
+            System.out.println(this.getName() + " более находчивый(ая), чем " + student.getName());
+        } else if (this.getResourcefulness() == student.getResourcefulness()) {
+            System.out.println("" +
+                    "Находчивость студента - " + this.getName() +
+                    " равна находчивости студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " более находчивый(ая), чем " + this.getName());}
+        if (this.getLustForPower() > student.getLustForPower()) {
+            System.out.println(this.getName() + " жаждет власти больше, чем " + student.getName());
+        } else if (this.getLustForPower() == student.getLustForPower()) {
+            System.out.println("Жажда власти студента - " + this.getName() +
+                    " равна жажде власти студента - " + student.getName());
+        } else {
+            System.out.println(student.getName() + " жаждет власти больше, чем " + this.getName());}
+    }
 
     public int getCunning() {
         return cunning;
