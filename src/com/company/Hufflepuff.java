@@ -13,11 +13,6 @@ public class Hufflepuff extends Hogwarts{
         this.fairness = fairness;
     }
 
-    public String toString() {
-        return super .toString() + ", уровень трудолюбия: " + hardworking + ", уровень верности: " + loyalty +
-                ", уровень честности: " + fairness;
-    }
-
     public void compareStudentsHufflepuff(Hufflepuff student) {
         if (this.getHardworking() > student.getHardworking()) {
             System.out.println(this.getName() + " более трудолюбивый(ая), чем " + student.getName());
@@ -66,5 +61,10 @@ public class Hufflepuff extends Hogwarts{
 
     public void setFairness(int fairness) {
         this.fairness = fairness;
+    }
+
+    public String toString() {
+        return super .toString() + ", уровень трудолюбия: " + hardworking + ", уровень верности: " + loyalty +
+                ", уровень честности: " + fairness;
     }
 }

@@ -12,10 +12,6 @@ public class Hogwarts {
         this.apparation = apparation;
     }
 
-    public String toString() {
-        return "Студент " + name + ", имеет силу магии: " + powerOfMagic + ", расстояние трансгрессии: " + apparation;
-    }
-
     public void compareStudents(Hogwarts student) {
         if (this.getPowerOfMagic() > student.getPowerOfMagic()) {
             System.out.println(this.getName() + " имеет выше уровень магии, чем " + student.getName());
@@ -59,5 +55,7 @@ public class Hogwarts {
         this.apparation = apparation;
     }
 
-
+    public String toString() {
+        return "Студент " + name + ", имеет силу магии: " + powerOfMagic + ", расстояние трансгрессии: " + apparation;
+    }
 }
